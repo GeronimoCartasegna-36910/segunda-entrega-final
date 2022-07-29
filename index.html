@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="form-container container mt-3">
+
+    <form id="idForm">
+        <div class="mb-3">
+            <label for="idMarca" class="form-label">Ingrese la Marca del vehiculo:</label>
+            <input type="text" class="form-control" id="idMarca" name="marca" required autocomplete="off">
+          </div>
+
+        <div class="mb-3">
+          <label for="idModelo" class="form-label">Ingrese el modelo del vehiculo:</label>
+          <input type="text" class="form-control" id="idModelo" name="modelo" required autocomplete="off">
+        </div>
+
+        <div class="mb-3">
+          <label for="idPrecio" class="form-label">Ingrese el precio del vehiculo: (sin puntos ni comas)</label>
+          <input type="number" class="form-control" id="idPrecio" name="precio" required autocomplete="off">
+        </div>
+
+        <div class="mb-3">
+            <label for="idStock" class="form-label">Ingrese el stock del vehiculo:</label>
+            <input type="number" class="form-control" id="idStock" name="stock" required autocomplete="off">
+          </div>
+
+        <button type="submit" class="btn btn-outline-success">Agrega vehiculo</button>
+        <button class="btn btn-outline-info" id="btnListado">Mostrar listado de vehiculos</button>
+      </form>
+
+      <div class="container">
+        <div id="divListado" class="row"></div>
+      </div>
+        
+
+</div>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
